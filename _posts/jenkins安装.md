@@ -37,8 +37,4 @@ startup.sh
 <br>如中文化插件,搜索Localization，勾选Locale plugin和Localization: Chinese (Simplified),点击直接安装；若安装完插件jenkins重启后，仍未中文生效，则可在主页->Manage Jenkins->Configure System,找到Locale栏目，设置Default Language，en为英文，zh_CN为简体中文，zh_TW为繁体中文，并勾选Ignore browser preference and force this language to all users
 <br>2.**上传**，Manage Plugins,选择标签**Advanced**，Upload Plugin,选择从插件下载地址下载的插件，点击upload
 
-### 四、配置优化
-1.若插件更新或下载失败，则打开http://localhost:8080/jenkins/pluginManager/advanced，将Upadate Site地址由https改为http;也可配置镜像地址 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
-，
-
 
