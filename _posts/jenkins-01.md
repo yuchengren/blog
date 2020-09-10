@@ -1,8 +1,7 @@
 ---
-title: jenkins01
+title: jenkins安装
 date: 2020-08-25 16:37:00
 categories:
-- auto
 - jenkins
 ---
 ### 一、简介
