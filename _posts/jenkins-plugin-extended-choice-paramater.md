@@ -6,8 +6,8 @@ categories:
 - plugins
 ---
 ### 一、简介
-多选
-<br>https://plugins.jenkins.io/extended-choice-parameter/
+多选  
+https://plugins.jenkins.io/extended-choice-parameter/
 ### 二、pipeline语法
 ```
 extendedChoice(
@@ -32,6 +32,6 @@ extendedChoice(
 * PT_TEXTBOX
 * PT_CHECKBOX
 * PT_RADIO
-* PT_HIDDEN
+* PT_HIDDEN  
 
 2.其他

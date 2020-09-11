@@ -19,11 +19,11 @@ task->configure，勾选Discard old builds
 ### 二、python
 Python/Python Wrapper
 
-### Git Parameter
+### 三、Git Parameter
 选择git分支、tag、version等
-### Extended Choice Paramater
+### 四、Extended Choice Paramater
 多选
-### Generic Webhook Trigger
+### 五、Generic Webhook Trigger
 网络回调钩子
 
 

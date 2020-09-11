@@ -6,5 +6,5 @@ categories:
 - plugins
 ---
 ### 一、简介
-网络回调钩子
-<br>https://plugins.jenkins.io/generic-webhook-trigger/
+网络回调钩子  
+https://plugins.jenkins.io/generic-webhook-trigger/

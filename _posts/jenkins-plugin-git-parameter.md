@@ -6,9 +6,9 @@ categories:
 - plugins
 ---
 ### 一、简介
-选择git分支、tag、version等
-<br>https://plugins.jenkins.io/git-parameter/
-<br>https://github.com/jenkinsci/git-parameter-plugin
+选择git分支、tag、version等  
+https://plugins.jenkins.io/git-parameter/  
+https://github.com/jenkinsci/git-parameter-plugin
 ### 二、pipeline语法
 ```
 gitParameter name: 'BRANCH',
