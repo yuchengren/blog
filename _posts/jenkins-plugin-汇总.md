@@ -25,5 +25,7 @@ Python/Python Wrapper
 多选
 ### 五、Generic Webhook Trigger
 网络回调钩子
+### 六、Build environment
+查看构建的环境变量，菜单Compare environment
 
 
