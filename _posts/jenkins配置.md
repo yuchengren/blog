@@ -10,3 +10,10 @@ jenkins->系统管理->全局工具配置，
 * JAVA_HOME    /DevelopTools/java/jdk
 * ANDROID_HOME   /DevelopTools/android/sdk
 * gradle-5.6.4 /DevelopTools/android/gradle-5.6.4
+
+### 二、添加凭据
+1.SSH username and private key  
+①找到本机私钥  
+~/.ssh/id_rsa  
+②jenkins->系统管理->Manage Credentials->全局凭据,  
+添加凭据-SSH username and private key  

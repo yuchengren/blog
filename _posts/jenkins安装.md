@@ -33,7 +33,7 @@ startup.sh
 ### 三、插件([下载地址](http://updates.jenkins-ci.org/download/plugins/))
 1.**安装**，jenkins->Manage Jenkins->Manage Plugins，选择Avaiable标签，filter框里输入你想安装的插件名称  
 如**中文化插件**,搜索Localization，勾选Locale plugin和Localization: Chinese (Simplified),点击直接安装；若安装完插件jenkins重启后，仍未中文生效，则可在主页->Manage Jenkins->Configure System,找到Locale栏目，设置Default Language，zh_US为英文，zh_CN为简体中文，zh_TW为繁体中文，并勾选Ignore browser preference and force this language to all users  
-若安装其他插件重启后，又出现显示部分中文情况，则将default Language先改为zh_US,http://localhost:8080/jenkins/restart, 重启后,再设置回zh_CN
+若安装其他插件重启后，又出现显示部分中文情况，则将default Language先改为zh_US,http://localhost:8080/jenkins/restart, 重启后,再设置回zh_CN  
 2.**上传**，Manage Plugins,选择标签**Advanced**，Upload Plugin,选择从插件下载地址下载的插件，点击upload
 
 

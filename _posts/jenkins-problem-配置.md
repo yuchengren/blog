@@ -1,5 +1,5 @@
 ---
-title: jenkins-problem-汇总
+title: jenkins-problem-配置
 date: 2020-08-25 16:37:00
 categories:
 - jenkins
@@ -18,3 +18,18 @@ Jenkins→系统管理→脚本命令行，输入
 ```
 System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai')
 ```
+### 四、构建缓存策略设置（防止磁盘溢出）
+* 自由样式任务
+Configuration Slicing插件
+* 流水线任务
+
+    ```
+    options {
+        buildDiscarder logRotator(artifactDaysToKeepStr: '14', artifactNumToKeepStr: '20', daysToKeepStr: '14', numToKeepStr: '20')
+    }
+
+    //daysToKeep: 构建记录将保存的天数
+    //numToKeep: 最多此数目的构建记录将被保存
+    //artifactDaysToKeep:比此早的发布包将被删除，但构建的日志、操作历史、报告等将被保留
+    //artifactNumToKeep:最多此数目的构建将保留他们的发布包
+    ```
