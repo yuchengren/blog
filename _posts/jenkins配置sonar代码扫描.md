@@ -15,7 +15,7 @@ https://www.jianshu.com/p/5e4a145af439
 类型选择：Secret text，然后Secret中填入之前生成的Token，ID可写sonar-token
 4. 配置sonarqube server  
 系统管理-系统配置，SonarQube servers配置项增加SonarQube Server  
-勾选Enable；name输入sonar；Server URL：http://127.0.0.1:9000，token选择上一步配置的sonar-token
+勾选Enable；name输入sonar；Server URL, 127.0.0.1:9000，token选择上一步配置的sonar-token
 5. 配置sonarqube scanner  
 系统管理-全局工具配置-SonarQube Scanner,勾选自动安装或配置已安装的scanner路径  
 Name:sonar-scanner-4.2.0  
