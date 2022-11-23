@@ -5,15 +5,15 @@ categories:
 - jenkins
 ---
 ### 前言
-以linux上部署tomcat+jenkins为例
+主要以linux上部署tomcat+jenkins为例
 ### 一、下载
 [jenkins下载地址]((https://jenkins.io/zh/download/))  
-方式一：单独安装
+方式一：mac上单独安装
 ```
 brew install jenkins
 brew services start/restart/stop jenkins
 ```
-方式二：tomcat部署jenkins.war  
+方式二：linux下tomcat部署jenkins.war  
 1.下载[tomcat](https://tomcat.apache.org/download-90.cgi)  
 2.选择Generic Java package(.war)，右键复制链接地址  
 进入到tomcat/webapps下,下载jenkins.war
