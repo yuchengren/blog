@@ -11,14 +11,16 @@ https://plugins.jenkins.io/git-parameter/
 https://github.com/jenkinsci/git-parameter-plugin
 ### 二、pipeline语法
 ```
-gitParameter name: 'BRANCH',
+gitParameter    name: 'BRANCH',
                 type: 'PT_BRANCH',
                 branchFilter: 'origin/(.*)',
                 defaultValue: 'origin/develop',
                 selectedValue: 'DEFAULT',
                 sortMode: 'ASCENDING_SMART',
                 description: '请选择分支',
-                useRepository:'.*appname.git'
+                useRepository:'.*appname.git',
+                quickFilterEnabled: true,
+                branch: ''
 ```
 1.type
 * Tag-为区分版本在代码中打上的标签

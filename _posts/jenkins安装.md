@@ -7,12 +7,18 @@ categories:
 ### 前言
 以linux上部署tomcat+jenkins为例
 ### 一、下载
+[jenkins下载地址]((https://jenkins.io/zh/download/))  
+方式一：单独安装
+```
+brew install jenkins
+brew services start/restart/stop jenkins
+```
+方式二：tomcat部署jenkins.war  
 1.下载[tomcat](https://tomcat.apache.org/download-90.cgi)  
-2.[jenkins下载地址]((https://jenkins.io/zh/download/))  
-选择Generic Java package(.war)，右键复制链接地址  
+2.选择Generic Java package(.war)，右键复制链接地址  
 进入到tomcat/webapps下,下载jenkins.war
 ```
-wget http://mirrors.jenkins.io/war-stable/2.249.1/jenkins.war 
+wget http://mirrors.jenkins-ci.org/war/2.366/jenkins.war 
 ```
 3.启动tomcat(前提是安装好jdk和配置好jdk的环境变量)
 ```
@@ -35,5 +41,7 @@ startup.sh
 如**中文化插件**,搜索Localization，勾选Locale plugin和Localization: Chinese (Simplified),点击直接安装；若安装完插件jenkins重启后，仍未中文生效，则可在主页->Manage Jenkins->Configure System,找到Locale栏目，设置Default Language，zh_US为英文，zh_CN为简体中文，zh_TW为繁体中文，并勾选Ignore browser preference and force this language to all users  
 若安装其他插件重启后，又出现显示部分中文情况，则将default Language先改为zh_US,http://localhost:8080/jenkins/restart, 重启后,再设置回zh_CN  
 2.**上传**，Manage Plugins,选择标签**Advanced**，Upload Plugin,选择从插件下载地址下载的插件，点击upload
+3.**镜像**，Manage Plugins-Advanced，最底部的URL可设置为清华镜像
+https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 
 
